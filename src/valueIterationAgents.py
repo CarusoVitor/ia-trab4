@@ -51,7 +51,6 @@ class ValueIterationAgent(ValueEstimationAgent):
                 best_action = self.computeActionFromValues(state)
                 if best_action is not None:
                     best_q = self.getQValue(state, best_action)
-                    next_state, _ = self.mdp.getTransitionStatesAndProbs(state, best_action)[0]
                     new_values[state] = best_q
             self.values = new_values
 
