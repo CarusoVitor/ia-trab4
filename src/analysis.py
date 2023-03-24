@@ -64,10 +64,11 @@ def question3e():
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
+# Para alcançar o outro lado da ponte, seria requerida muita aleatoridade, o que
+# é impraticável em 50 episódios
 def question6():
-    answerEpsilon = 0.2
-    answerLearningRate = 0.5
-    # return answerEpsilon, answerLearningRate
+    answerEpsilon = None
+    answerLearningRate = None
     return 'NOT POSSIBLE'
     # If not possible, return 'NOT POSSIBLE'
 
